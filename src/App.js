@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/header';
+import Tiles from './components/tiles';
 import Fotter from './fotter/Fotter';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
@@ -8,9 +9,10 @@ function App() {
   return (
     <>
     <Header/>
-    <div className='container'>
-      <DragandDrop/>
-    </div>
+    <Tiles/>
+      <div className='container'>
+        <DragandDrop/>
+      </div>
     {/* <Fotter/> */}
     </>
   );

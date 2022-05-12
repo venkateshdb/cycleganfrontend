@@ -1,5 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
+import App from '../App';
 
 function Header(){
 
@@ -8,7 +10,9 @@ function Header(){
         <div className="header-top">
         <nav className="navbar">
             <div className="brand">
-                    <h1 className="brand-name">Artistic photos</h1>
+                <a href='/'>
+                <h1 className="brand-name">Artistic photos</h1>
+                </a>
             </div>
 
             {/* <div className="link">
